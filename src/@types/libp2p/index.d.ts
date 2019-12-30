@@ -79,7 +79,7 @@ declare module 'libp2p' {
     config?: OptionsConfig
   }
 
-  export type Events = 'peer:connect' | 'peer:disconnect' | 'peer:discovery' | 'start' | 'stop';
+  export type Events = 'error' | 'peer:connect' | 'peer:disconnect' | 'peer:discovery' | 'start' | 'stop';
 
   export interface Connection {
     getPeerInfo (cb: (error: Error | null, peerInfo?: PeerInfo) => any): void;

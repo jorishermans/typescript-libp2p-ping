@@ -22,6 +22,7 @@ declare module 'peer-info' {
     disconnect (): void
     isConnected (): Multiaddr
     static create(peerId: PeerId | { id: string, privKey: any, pubKey: any }): Promise<PeerInfo>
+    static create(callback: (error: any, peerInfo: PeerInfo) => void): void
     static isPeerInfo(peerInfo: any): boolean
     id: PeerId
     protocols: Set<string>
