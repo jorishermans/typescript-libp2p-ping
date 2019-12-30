@@ -1,0 +1,29 @@
+{
+  "name": "closeby-p2p-ping",
+  "version": "1.0.0",
+  "description": "this is a closeby p2p ping",
+  "main": "build/index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@nodeutils/defaults-deep": "^1.1.0",
+    "@types/node": "^12.12.21",
+    "libp2p": "^0.26.2",
+    "libp2p-mplex": "^0.8.5",
+    "libp2p-secio": "^0.11.1",
+    "libp2p-tcp": "^0.13.2",
+    "peer-id": "^0.13.6",
+    "peer-info": "^0.16.2"
+  }
+}
